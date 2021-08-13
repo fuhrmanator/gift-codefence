@@ -14,7 +14,7 @@ describe("Convert suite:", () => {
   }
 }`;
         const actual: number | string = formatter.format(input)
-        expect(actual).toEqual("```\\nclass Calculator \\{\\n  static add(a\\: number, b\\: number) \\{\\n    return a + b;\\n  \\}\\n\\}\\n```")
+        expect(actual).toEqual("\\n```\\nclass Calculator \\{\\n  static add(a\\: number, b\\: number) \\{\\n    return a + b;\\n  \\}\\n\\}\\n```")
     });
 
 })
